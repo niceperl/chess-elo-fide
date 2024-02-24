@@ -1,7 +1,7 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Download and store FIDE ratings",
    "author" : [
-      "Miguel PRZ <niceperl@gmail.com>"
+      "NICEPERL L<https://metacpan.org/author/NICEPERL>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v3.1.23, CPAN::Meta::Converter version 2.150010",
@@ -42,11 +42,17 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.008001",
-            "DBI" : "1.634",
-            "DBD::SQLite" : "1.50",
-            "Moo" : "2.003004",
-            "Type::Tiny" : "1.000005"
+            "DBD::SQLite" : "0",
+            "DBI" : "0",
+            "DateTime" : "0",
+            "DateTime::Format::Mail" : "0",
+            "DateTime::Format::Strptime" : "0",
+            "HTTP::Tiny" : "0",
+            "IO::Uncompress::Unzip" : "0",
+            "Log::Handler" : "0",
+            "Moo" : "0",
+            "Net::SSLeay" : "0",
+            "Type::Tiny" : "0"
          }
       },
       "test" : {
@@ -56,7 +62,21 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/niceperl/chess-elo-fide/issues"
+      },
+      "homepage" : "https://github.com/niceperl/chess-elo-fide",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/niceperl/chess-elo-fide.git",
+         "web" : "https://github.com/niceperl/chess-elo-fide"
+      }
+   },
    "version" : "0.01",
+   "x_contributors" : [
+      "JMiguel PRZ <niceperl@gmail.com>"
+   ],
    "x_serialization_backend" : "JSON::PP version 4.07",
    "x_static_install" : 1
 }

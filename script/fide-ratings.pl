@@ -4,12 +4,13 @@ use warnings;
 use Log::Handler;
 use Chess::ELO::FIDE;
 
+my $federation = shift || '';
 
 my $log = Log::Handler->new();
 $log->add( screen => {log_to=> 'STDOUT', message_layout=> "%T [%L] %m (%C)", maxlevel=> "debug"} );
 
 my $ratings = Chess::ELO::FIDE->new(
-    #federation=> 'ESP',
+    federation=> $federation,
     sqlite    => 'elo.sqlite',
     $log      => $log
 );

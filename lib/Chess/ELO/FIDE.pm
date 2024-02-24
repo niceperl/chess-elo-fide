@@ -35,7 +35,7 @@ sub BUILD {
     my $dbh = DBI->connect($dsn, "", "", { RaiseError=>1, AutoCommit=>1 });
     $self->_set__dbh($dbh);
     $self->_set__temp_dir( tempdir(CLEANUP=> 1) );
-    $self->_init_sqlite_
+    $self->_init_sqlite_;
 }
 
 #------------------------------------------------------------------------------
